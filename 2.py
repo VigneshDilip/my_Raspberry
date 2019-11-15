@@ -1,0 +1,16 @@
+##RASPBERRY_PI_CODE_FOR_MOTOR_CONTROLLING
+
+import RPi.GPIO as GPIO
+GPIO.setup(GPIO.BOARD)
+GPIO.setup(7,GPIO.OUT)
+GPIO.setup(11,GPIO.OUT)
+GPIO.setup(13,GPIO.OUT)
+GPIO.setup(15,GPIO.OUT)
+
+GPIO.output(7,TRUE)
+GPIO.output(11,TRUE)
+GPIO.output(13,TRUE)
+GPIO.output(15,TRUE)
+time.sleep(2)   ##IT WILL RUN THE MOTOR FOR 2 SECONDS
+
+GPIO.cleanup()
